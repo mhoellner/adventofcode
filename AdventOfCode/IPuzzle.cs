@@ -4,6 +4,6 @@ namespace AdventOfCode
 {
     public interface IPuzzle
     {
-        int Resolve(List<string> inputs);
+        long Resolve(List<string> inputs);
     }
 }

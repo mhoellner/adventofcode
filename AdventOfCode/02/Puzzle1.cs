@@ -5,7 +5,7 @@ namespace AdventOfCode._02
 {
     public class Puzzle1 : IPuzzle
     {
-        public int Resolve(List<string> inputs)
+        public long Resolve(List<string> inputs)
         {
             var correctPasswords = 0;
 

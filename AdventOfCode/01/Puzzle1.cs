@@ -12,7 +12,7 @@ namespace AdventOfCode._01
             Target = target;
         }
 
-        public int Resolve(List<string> input)
+        public long Resolve(List<string> input)
         {
             var parsedInput = input.Select(int.Parse).ToList();
             parsedInput.Sort();
