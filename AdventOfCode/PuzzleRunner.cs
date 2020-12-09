@@ -85,5 +85,15 @@ namespace AdventOfCode
             var result2 = new _08.Puzzle2().Resolve(input);
             Assert.Equal(1639, result2);
         }
+
+        [Fact]
+        public void Day09()
+        {
+            var input = new InputReader().Read("../../../09/input.txt");
+            var result1 = new _09.Puzzle1().Resolve(input);
+            Assert.Equal(50047984, result1);
+            var result2 = new _09.Puzzle2().Resolve(input);
+            Assert.Equal(5407707, result2);
+        }
     }
 }
