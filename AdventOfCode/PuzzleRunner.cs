@@ -1,9 +1,16 @@
 ﻿using Xunit;
+using Xunit.Abstractions;
 
 namespace AdventOfCode
 {
     public class PuzzleRunner
     {
+        private readonly ITestOutputHelper _output;
+        public PuzzleRunner(ITestOutputHelper output)
+        {
+            _output = output;
+        }
+
         [Fact]
         public void Day01()
         {
@@ -104,6 +111,16 @@ namespace AdventOfCode
             Assert.Equal(2380, result1);
             var result2 = new _10.Puzzle2().Resolve(input);
             Assert.Equal(48358655787008, result2);
+        }
+
+        [Fact]
+        public void Day11()
+        {
+            var input = new InputReader().Read("../../../11/input.txt");
+            var result1 = new _11.Puzzle1().Resolve(input);
+            Assert.Equal(2183, result1);
+            //var result2 = new _11.Puzzle2().Resolve(input);
+            //Assert.Equal(48358655787008, result2);
         }
     }
 }
