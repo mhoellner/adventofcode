@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System.Collections.Generic;
+using Xunit;
 using Xunit.Abstractions;
 
 namespace AdventOfCode
@@ -129,6 +130,33 @@ namespace AdventOfCode
             Assert.Equal(1631, result1);
             var result2 = new _12.Puzzle2().Resolve(input);
             Assert.Equal(58606, result2);
+        }
+
+        [Fact]
+        public void Day13()
+        {
+            var input = new InputReader().Read("../../../13/input.txt");
+            var result1 = new _13.Puzzle1().Resolve(input);
+            Assert.Equal(370, result1);
+            var result2 = new _13.Puzzle2().Resolve(input);
+            _output.WriteLine(result2.ToString());
+            Assert.Equal(894954360381385, result2);
+        }
+
+        [Fact]
+        public void Day13_Examples()
+        {
+            var puzzle2 = new _13.Puzzle2 { Start = 0 };
+            var input = new List<string> { "", "17,x,13,19" };
+            Assert.Equal(3417, puzzle2.Resolve(input));
+            input = new List<string> { "", "67,7,59,61" };
+            Assert.Equal(754018, puzzle2.Resolve(input));
+            input = new List<string> { "", "67,x,7,59,61" };
+            Assert.Equal(779210, puzzle2.Resolve(input));
+            input = new List<string> { "", "67,7,x,59,61" };
+            Assert.Equal(1261476, puzzle2.Resolve(input));
+            input = new List<string> { "", "1789,37,47,1889" };
+            Assert.Equal(1202161486, puzzle2.Resolve(input));
         }
     }
 }
