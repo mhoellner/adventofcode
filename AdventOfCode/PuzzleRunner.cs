@@ -158,5 +158,15 @@ namespace AdventOfCode
             input = new List<string> { "", "1789,37,47,1889" };
             Assert.Equal(1202161486, puzzle2.Resolve(input));
         }
+
+        [Fact]
+        public void Day14()
+        {
+            var input = new InputReader().Read("../../../14/input.txt");
+            var result1 = new _14.Puzzle1().Resolve(input);
+            Assert.Equal(8332632930672, result1);
+            var result2 = new _14.Puzzle2().Resolve(input);
+            Assert.Equal(4753238784664, result2);
+        }
     }
 }
