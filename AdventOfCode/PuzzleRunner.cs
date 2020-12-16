@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+
 using Xunit;
 using Xunit.Abstractions;
 
@@ -177,6 +178,16 @@ namespace AdventOfCode
             Assert.Equal(387, result1);
             var result2 = new _15.Puzzle { Target = 30_000_000 }.Resolve(input);
             Assert.Equal(6428, result2);
+        }
+
+        [Fact]
+        public void Day16()
+        {
+            var input = new InputReader().Read("../../../16/input.txt");
+            var result1 = new _16.Puzzle1().Resolve(input);
+            Assert.Equal(30869, result1);
+            var result2 = new _16.Puzzle2().Resolve(input);
+            Assert.Equal(4381476149273, result2);
         }
     }
 }
