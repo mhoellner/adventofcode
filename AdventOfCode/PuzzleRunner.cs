@@ -189,5 +189,13 @@ namespace AdventOfCode
             var result2 = new _16.Puzzle2().Resolve(input);
             Assert.Equal(4381476149273, result2);
         }
+
+        [Fact]
+        public void Day18()
+        {
+            var input = new InputReader().Read("../../../18/input.txt");
+            var result1 = new _18.Puzzle1().Resolve(input);
+            Assert.Equal(50956598240016, result1);
+        }
     }
 }
