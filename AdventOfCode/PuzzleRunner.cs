@@ -196,6 +196,16 @@ namespace AdventOfCode
             var input = new InputReader().Read("../../../18/input.txt");
             var result1 = new _18.Puzzle1().Resolve(input);
             Assert.Equal(50956598240016, result1);
+            var result2 = new _18.Puzzle2().Resolve(input);
+            // is wrong for some reason
+        }
+
+        [Fact]
+        public void Day18_Tests()
+        {
+            var input = new List<string> { "1 + (2 * 3) + (4 * (5 + 6))", "2 * 3 + (4 * 5)", "5 + (8 * 3 + 9 + 3 * 4 * 3)", "5 * 9 * (7 * 3 * 3 + 9 * 3 + (8 + 6 * 4))", "((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2" };
+            var result2 = new _18.Puzzle2().Resolve(input);
+            Assert.Equal(51 + 46 + 1445 + 669060 + 23340, result2);
         }
     }
 }
