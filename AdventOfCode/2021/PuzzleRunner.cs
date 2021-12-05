@@ -1,3 +1,4 @@
+using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -58,6 +59,18 @@ namespace AdventOfCode._2021
 
             var result2 = new _04.Puzzle2().Resolve(input);
             Assert.Equal(10030, result2);
+        }
+
+        [Fact]
+        public void Day05()
+        {
+            var input = new InputReader().Read("../../../2021/05/input.txt");
+
+            var result1 = new _05.Puzzle1().Resolve(input);
+            Assert.Equal(6007, result1);
+
+            var result2 = new _05.Puzzle2().Resolve(input);
+            Assert.Equal(19349, result2);
         }
     }
 }
