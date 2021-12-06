@@ -1,4 +1,6 @@
+using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -71,6 +73,18 @@ namespace AdventOfCode._2021
 
             var result2 = new _05.Puzzle2().Resolve(input);
             Assert.Equal(19349, result2);
+        }
+
+        [Fact]
+        public void Day06()
+        {
+            var input = new InputReader().Read("../../../2021/06/input.txt");
+
+            var result1 = new _06.Puzzle(80).Resolve(input);
+            Assert.Equal(351092, result1);
+
+            var result2 = new _06.Puzzle(256).Resolve(input);
+            Assert.Equal(1595330616005, result2);
         }
     }
 }
