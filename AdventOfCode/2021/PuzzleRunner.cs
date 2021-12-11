@@ -134,5 +134,17 @@ namespace AdventOfCode._2021
             var result2 = new _10.Puzzle2().Resolve(input);
             Assert.Equal(3094671161, result2);
         }
+
+        [Fact]
+        public void Day11()
+        {
+            var input = new InputReader().Read("../../../2021/11/input.txt");
+
+            var result1 = new _11.Puzzle1().Resolve(input);
+            Assert.Equal(1729, result1);
+
+            var result2 = new _11.Puzzle2().Resolve(input);
+            Assert.Equal(237, result2);
+        }
     }
 }
