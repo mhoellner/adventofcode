@@ -227,5 +227,17 @@ namespace AdventOfCode._2021
             Assert.Equal(0, puzzle2.Resolve(new List<string> {"9C005AC2F8F0"}));
             Assert.Equal(1, puzzle2.Resolve(new List<string> {"9C0141080250320F1802104A08"}));
         }
+
+        [Fact]
+        public void Day17()
+        {
+            var input = new InputReader().Read("../../../2021/17/input.txt");
+
+            var result1 = new _17.Puzzle1().Resolve(input);
+            Assert.Equal(8256, result1);
+
+            var result2 = new _17.Puzzle2().Resolve(input);
+            Assert.Equal(2326, result2);
+        }
     }
 }
