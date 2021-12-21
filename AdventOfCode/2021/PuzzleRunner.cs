@@ -14,7 +14,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day01()
+        public void Day01_SonarSweep()
         {
             var input = new InputReader().Read("../../../2021/01/input.txt");
 
@@ -26,7 +26,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day02()
+        public void Day02_Dive()
         {
             var input = new InputReader().Read("../../../2021/02/input.txt");
 
@@ -38,7 +38,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day03()
+        public void Day03_BinaryDiagnostic()
         {
             var input = new InputReader().Read("../../../2021/03/input.txt");
 
@@ -50,7 +50,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day04()
+        public void Day04_GiantSquid()
         {
             var input = new InputReader().Read("../../../2021/04/input.txt");
 
@@ -62,7 +62,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day05()
+        public void Day05_HydrothermalVenture()
         {
             var input = new InputReader().Read("../../../2021/05/input.txt");
 
@@ -74,7 +74,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day06()
+        public void Day06_Lanternfish()
         {
             var input = new InputReader().Read("../../../2021/06/input.txt");
 
@@ -86,7 +86,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day07()
+        public void Day07_TheTreacheryOfWhales()
         {
             var input = new InputReader().Read("../../../2021/07/input.txt");
 
@@ -98,7 +98,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day08()
+        public void Day08_SevenSegmentSearch()
         {
             var input = new InputReader().Read("../../../2021/08/input.txt");
 
@@ -110,7 +110,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day09()
+        public void Day09_SmokeBasin()
         {
             var input = new InputReader().Read("../../../2021/09/input.txt");
 
@@ -122,7 +122,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day10()
+        public void Day10_SyntaxScoring()
         {
             var input = new InputReader().Read("../../../2021/10/input.txt");
 
@@ -134,7 +134,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day11()
+        public void Day11_DumboOctopus()
         {
             var input = new InputReader().Read("../../../2021/11/input.txt");
 
@@ -146,7 +146,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day12()
+        public void Day12_PassagePathing()
         {
             var input = new InputReader().Read("../../../2021/12/input.txt");
 
@@ -158,7 +158,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day13()
+        public void Day13_TransparentOrigami()
         {
             var input = new InputReader().Read("../../../2021/13/input.txt");
 
@@ -169,7 +169,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day14()
+        public void Day14_ExtendedPolymerization()
         {
             var input = new InputReader().Read("../../../2021/14/input.txt");
 
@@ -181,7 +181,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day15()
+        public void Day15_Chiton()
         {
             var input = new InputReader().Read("../../../2021/15/input.txt");
 
@@ -193,7 +193,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day16()
+        public void Day16_PacketDecoder()
         {
             var input = new InputReader().Read("../../../2021/16/input.txt");
 
@@ -205,7 +205,7 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day17()
+        public void Day17_TrickShot()
         {
             var input = new InputReader().Read("../../../2021/17/input.txt");
 
@@ -217,13 +217,33 @@ namespace AdventOfCode._2021
         }
 
         [Fact]
-        public void Day18()
+        public void Day18_Snailfish()
         {
             var input = new InputReader().Read("../../../2021/18/input.txt");
 
             Assert.Equal(4323, new _18.Puzzle1().Resolve(input));
 
             Assert.Equal(4749, new _18.Puzzle2().Resolve(input));
+        }
+
+        [Fact]
+        public void Day20_TrenchMap()
+        {
+            var input = new InputReader().Read("../../../2021/20/input.txt");
+            
+            Assert.Equal(5619, new _20.Puzzle().Resolve(input));
+            
+            Assert.Equal(20122, new _20.Puzzle(50).Resolve(input));
+        }
+
+        [Fact]
+        public void Day21_DiracDice()
+        {
+            var input = new InputReader().Read("../../../2021/21/input.txt");
+            
+            Assert.Equal(989352, new _21.Puzzle1().Resolve(input));
+            
+            Assert.Equal(430229563871565, new _21.Puzzle2().Resolve(input));
         }
     }
 }
