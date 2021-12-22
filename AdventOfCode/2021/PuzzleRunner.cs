@@ -245,5 +245,15 @@ namespace AdventOfCode._2021
             
             Assert.Equal(430229563871565, new _21.Puzzle2().Resolve(input));
         }
+
+        [Fact]
+        public void Day22_ReactorReboot()
+        {
+            var input = new InputReader().Read("../../../2021/22/input.txt");
+            
+            Assert.Equal(610196, new _22.Puzzle().Resolve(input));
+            
+            Assert.Equal(1282401587270826, new _22.Puzzle(false).Resolve(input));
+        }
     }
 }
