@@ -25,7 +25,7 @@ namespace AdventOfCode._2021._13
             if (Y > y) Y = Y - (2 * (Y - y));
         }
 
-        public override bool Equals(object? obj)
+        public override bool Equals(object obj)
         {
             return obj is Position other && Equals(other);
         }

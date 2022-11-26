@@ -195,7 +195,7 @@ namespace AdventOfCode._2020
             var input = new InputReader().Read("../../../2020/18/input.txt");
             var result1 = new _18.Puzzle1().Resolve(input);
             Assert.Equal(50956598240016, result1);
-            var result2 = new _18.Puzzle2().Resolve(input);
+            new _18.Puzzle2().Resolve(input);
             // is wrong for some reason
         }
 
