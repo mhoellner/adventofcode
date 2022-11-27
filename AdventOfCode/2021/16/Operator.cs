@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace AdventOfCode._2021._16
                 5 => Children[0].Calculate() > Children[1].Calculate() ? 1L : 0L,
                 6 => Children[0].Calculate() < Children[1].Calculate() ? 1L : 0L,
                 7 => Children[0].Calculate() == Children[1].Calculate() ? 1L : 0L,
-                _ => throw new UnreachableException("This should not happen.")
+                _ => throw new NotImplementedException("This should not happen.")
             };
 
             return result;
@@ -66,7 +67,7 @@ namespace AdventOfCode._2021._16
                 5 => $"({Children[0]} > {Children[1]})",
                 6 => $"({Children[0]} < {Children[1]})",
                 7 => $"({Children[0]} == {Children[1]})",
-                _ => throw new UnreachableException("This should not happen.")
+                _ => throw new NotImplementedException("This should not happen.")
             };
             return op;
         }

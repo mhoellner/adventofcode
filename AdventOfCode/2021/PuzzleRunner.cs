@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -254,6 +255,12 @@ namespace AdventOfCode._2021
             Assert.Equal(610196, new _22.Puzzle().Resolve(input));
             
             Assert.Equal(1282401587270826, new _22.Puzzle(false).Resolve(input));
+        }
+
+        [Fact(Skip = "Brute forcing a 14 digit long number does not work :(")]
+        public void Day24_ArithmeticLogicUnit()
+        {
+            Assert.Equal(0, new _24.Puzzle1().Resolve(Enumerable.Empty<string>().ToList()));
         }
     }
 }
