@@ -23,4 +23,16 @@ public class PuzzleRunnner
         var result2 = new _01.Puzzle2().Resolve(input);
         Assert.Equal(204639, result2);
     }
+
+    [Fact]
+    public void Day02_Rock_Paper_Scissors()
+    {
+        var input = new InputReader().Read("../../../2022/02/input.txt");
+
+        var result1 = new _02.Puzzle1().Resolve(input);
+        Assert.Equal(11873, result1);
+
+        var result2 = new _02.Puzzle2().Resolve(input);
+        Assert.Equal(12014, result2);
+    }
 }
