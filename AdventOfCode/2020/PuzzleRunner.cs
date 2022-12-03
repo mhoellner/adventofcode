@@ -15,7 +15,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day01()
         {
-            var input = new InputReader().Read("../../../2020/01/input.txt");
+            var input = InputReader.Read("../../../2020/01/input.txt");
 
             var result1 = new _01.Puzzle1().Resolve(input);
             Assert.Equal(786811, result1);
@@ -27,7 +27,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day02()
         {
-            var input = new InputReader().Read("../../../2020/02/input.txt");
+            var input = InputReader.Read("../../../2020/02/input.txt");
             var result1 = new _02.Puzzle1().Resolve(input);
             Assert.Equal(493, result1);
             var result2 = new _02.Puzzle2().Resolve(input);
@@ -37,7 +37,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day03()
         {
-            var input = new InputReader().Read("../../../2020/03/input.txt");
+            var input = InputReader.Read("../../../2020/03/input.txt");
             var result1 = new _03.Puzzle1().Resolve(input);
             Assert.Equal(284, result1);
             var result2 = new _03.Puzzle2().Resolve(input);
@@ -47,7 +47,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day04()
         {
-            var input = new InputReader().Read("../../../2020/04/input.txt");
+            var input = InputReader.Read("../../../2020/04/input.txt");
             var result1 = new _04.Puzzle1().Resolve(input);
             Assert.Equal(200, result1);
             var result2 = new _04.Puzzle2().Resolve(input);
@@ -57,7 +57,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day05()
         {
-            var input = new InputReader().Read("../../../2020/05/input.txt");
+            var input = InputReader.Read("../../../2020/05/input.txt");
             var result1 = new _05.Puzzle1().Resolve(input);
             Assert.Equal(965, result1);
             var result2 = new _05.Puzzle2().Resolve(input);
@@ -67,7 +67,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day06()
         {
-            var input = new InputReader().Read("../../../2020/06/input.txt");
+            var input = InputReader.Read("../../../2020/06/input.txt");
             var result1 = new _06.Puzzle1().Resolve(input);
             Assert.Equal(6947, result1);
             var result2 = new _06.Puzzle2().Resolve(input);
@@ -77,7 +77,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day07()
         {
-            var input = new InputReader().Read("../../../2020/07/input.txt");
+            var input = InputReader.Read("../../../2020/07/input.txt");
             var result1 = new _07.Puzzle1().Resolve(input);
             Assert.Equal(287, result1);
             var result2 = new _07.Puzzle2().Resolve(input);
@@ -87,7 +87,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day08()
         {
-            var input = new InputReader().Read("../../../2020/08/input.txt");
+            var input = InputReader.Read("../../../2020/08/input.txt");
             var result1 = new _08.Puzzle1().Resolve(input);
             Assert.Equal(1766, result1);
             var result2 = new _08.Puzzle2().Resolve(input);
@@ -97,7 +97,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day09()
         {
-            var input = new InputReader().Read("../../../2020/09/input.txt");
+            var input = InputReader.Read("../../../2020/09/input.txt");
             var result1 = new _09.Puzzle1().Resolve(input);
             Assert.Equal(50047984, result1);
             var result2 = new _09.Puzzle2().Resolve(input);
@@ -107,7 +107,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day10()
         {
-            var input = new InputReader().Read("../../../2020/10/input.txt");
+            var input = InputReader.Read("../../../2020/10/input.txt");
             var result1 = new _10.Puzzle1().Resolve(input);
             Assert.Equal(2380, result1);
             var result2 = new _10.Puzzle2().Resolve(input);
@@ -117,7 +117,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day11()
         {
-            var input = new InputReader().Read("../../../2020/11/input.txt");
+            var input = InputReader.Read("../../../2020/11/input.txt");
             var result1 = new _11.Puzzle1().Resolve(input);
             Assert.Equal(2183, result1);
         }
@@ -125,7 +125,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day12()
         {
-            var input = new InputReader().Read("../../../2020/12/input.txt");
+            var input = InputReader.Read("../../../2020/12/input.txt");
             var result1 = new _12.Puzzle1().Resolve(input);
             Assert.Equal(1631, result1);
             var result2 = new _12.Puzzle2().Resolve(input);
@@ -135,7 +135,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day13()
         {
-            var input = new InputReader().Read("../../../2020/13/input.txt");
+            var input = InputReader.Read("../../../2020/13/input.txt");
             var result1 = new _13.Puzzle1().Resolve(input);
             Assert.Equal(370, result1);
             var result2 = new _13.Puzzle2().Resolve(input);
@@ -162,7 +162,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day14()
         {
-            var input = new InputReader().Read("../../../2020/14/input.txt");
+            var input = InputReader.Read("../../../2020/14/input.txt");
             var result1 = new _14.Puzzle1().Resolve(input);
             Assert.Equal(8332632930672, result1);
             var result2 = new _14.Puzzle2().Resolve(input);
@@ -172,7 +172,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day15()
         {
-            var input = new InputReader().Read("../../../2020/15/input.txt");
+            var input = InputReader.Read("../../../2020/15/input.txt");
             var result1 = new _15.Puzzle().Resolve(input);
             Assert.Equal(387, result1);
             var result2 = new _15.Puzzle { Target = 30_000_000 }.Resolve(input);
@@ -182,7 +182,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day16()
         {
-            var input = new InputReader().Read("../../../2020/16/input.txt");
+            var input = InputReader.Read("../../../2020/16/input.txt");
             var result1 = new _16.Puzzle1().Resolve(input);
             Assert.Equal(30869, result1);
             var result2 = new _16.Puzzle2().Resolve(input);
@@ -192,7 +192,7 @@ namespace AdventOfCode._2020
         [Fact]
         public void Day18()
         {
-            var input = new InputReader().Read("../../../2020/18/input.txt");
+            var input = InputReader.Read("../../../2020/18/input.txt");
             var result1 = new _18.Puzzle1().Resolve(input);
             Assert.Equal(50956598240016, result1);
             new _18.Puzzle2().Resolve(input);

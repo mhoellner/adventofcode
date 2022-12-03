@@ -3,9 +3,9 @@ using System.IO;
 
 namespace AdventOfCode
 {
-    public class InputReader
+    public static class InputReader
     {
-        public List<string> Read(string path)
+        public static List<string> Read(string path)
         {
             var result = new List<string>();
             using var file = File.OpenRead(path);
