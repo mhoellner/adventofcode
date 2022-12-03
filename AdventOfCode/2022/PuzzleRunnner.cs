@@ -35,4 +35,16 @@ public class PuzzleRunnner
         var result2 = new _02.Puzzle2().Resolve(input);
         Assert.Equal(12014, result2);
     }
+
+    [Fact]
+    public void Day03_Rucksack_Reorganization()
+    {
+        var input = new InputReader().Read("../../../2022/03/input.txt");
+
+        var result1 = new _03.Puzzle1().Resolve(input);
+        Assert.Equal(7727, result1);
+
+        var result2 = new _03.Puzzle2().Resolve(input);
+        Assert.Equal(2609, result2);
+    }
 }
