@@ -59,4 +59,16 @@ public class PuzzleRunnner
         var result2 = new _04.Puzzle2().Resolve(input);
         Assert.Equal(801, result2);
     }
+
+    [Fact]
+    public void Day05_Supply_Stacks()
+    {
+        var input = InputReader.Read("../../../2022/05/input.txt");
+
+        var result1 = new _05.Puzzle1().Resolve(input);
+        Assert.Equal("MQSHJMWNH", result1);
+
+        var result2 = new _05.Puzzle2().Resolve(input);
+        Assert.Equal("LLWJRBHVZ", result2);
+    }
 }
