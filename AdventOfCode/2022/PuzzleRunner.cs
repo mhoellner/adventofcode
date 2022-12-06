@@ -3,11 +3,11 @@ using Xunit.Abstractions;
 
 namespace AdventOfCode._2022;
 
-public class PuzzleRunnner
+public class PuzzleRunner
 {
     private readonly ITestOutputHelper _testOutput;
     
-    public PuzzleRunnner(ITestOutputHelper testOutput)
+    public PuzzleRunner(ITestOutputHelper testOutput)
     {
         _testOutput = testOutput;
     }
@@ -70,5 +70,17 @@ public class PuzzleRunnner
 
         var result2 = new _05.Puzzle2().Resolve(input);
         Assert.Equal("LLWJRBHVZ", result2);
+    }
+
+    [Fact]
+    public void Day06_Tuning_Trouble()
+    {
+        var input = InputReader.Read("../../../2022/06/input.txt");
+
+        var result1 = new _06.Puzzle().Resolve(input);
+        Assert.Equal(1848, result1);
+
+        var result2 = new _06.Puzzle(14).Resolve(input);
+        Assert.Equal(2308, result2);
     }
 }
