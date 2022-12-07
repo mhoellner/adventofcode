@@ -83,4 +83,16 @@ public class PuzzleRunner
         var result2 = new _06.Puzzle(14).Resolve(input);
         Assert.Equal(2308, result2);
     }
+
+    [Fact]
+    public void Day07_No_Space_Left_On_Device()
+    {
+        var input = InputReader.Read("../../../2022/07/input.txt");
+
+        var result1 = new _07.Puzzle1().Resolve(input);
+        Assert.Equal(1348005, result1);
+
+        var result2 = new _07.Puzzle2().Resolve(input);
+        Assert.Equal(12785886, result2);
+    }
 }
