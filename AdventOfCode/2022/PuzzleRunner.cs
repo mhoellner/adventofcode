@@ -95,4 +95,16 @@ public class PuzzleRunner
         var result2 = new _07.Puzzle2().Resolve(input);
         Assert.Equal(12785886, result2);
     }
+
+    [Fact]
+    public void Day08_Treetop_Tree_Houses()
+    {
+        var input = InputReader.Read("../../../2022/08/input.txt");
+
+        var result1 = new _08.Puzzle1().Resolve(input);
+        Assert.Equal(1717, result1);
+
+        var result2 = new _08.Puzzle2().Resolve(input);
+        Assert.Equal(321975, result2);
+    }
 }
