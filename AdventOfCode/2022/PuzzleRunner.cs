@@ -116,4 +116,25 @@ public class PuzzleRunner
         var result1 = new _09.Puzzle1().Resolve(input);
         Assert.Equal(6391, result1);
     }
+
+    [Fact]
+    public void Day10_CathodeRay_Tube()
+    {
+        var input = InputReader.Read("../../../2022/10/input.txt");
+
+        var result1 = new _10.Puzzle1().Resolve(input);
+        Assert.Equal(12520, result1);
+
+        var result2 = new _10.Puzzle2().Resolve(input);
+        _testOutput.WriteLine(result2);
+        Assert.Equal("""
+        ####.#..#.###..####.###....##..##..#....
+        #....#..#.#..#....#.#..#....#.#..#.#....
+        ###..####.#..#...#..#..#....#.#....#....
+        #....#..#.###...#...###.....#.#.##.#....
+        #....#..#.#....#....#....#..#.#..#.#....
+        ####.#..#.#....####.#.....##...###.####.
+
+        """, result2);
+    }
 }
