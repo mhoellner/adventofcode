@@ -137,4 +137,16 @@ public class PuzzleRunner
 
         """, result2);
     }
+
+    [Fact]
+    public void Day11_Monkey_in_the_Middle()
+    {
+        var input = InputReader.Read("../../../2022/11/input.txt");
+
+        var result1 = new _11.Puzzle().Resolve(input);
+        Assert.Equal(111210, result1);
+
+        var result2 = new _11.Puzzle(10_000, isPartTwo: true).Resolve(input);
+        Assert.Equal(15447387620, result2);
+    }
 }
