@@ -107,4 +107,13 @@ public class PuzzleRunner
         var result2 = new _08.Puzzle2().Resolve(input);
         Assert.Equal(321975, result2);
     }
+
+    [Fact]
+    public void Day09_Rope_Bridge()
+    {
+        var input = InputReader.Read("../../../2022/09/input.txt");
+
+        var result1 = new _09.Puzzle1().Resolve(input);
+        Assert.Equal(6391, result1);
+    }
 }
